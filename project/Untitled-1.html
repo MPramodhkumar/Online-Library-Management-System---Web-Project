@@ -1,0 +1,569 @@
+
+<DOCTYPE html>
+    <html lang="eng" dir="ltr">
+        <head>
+            <meta charset="utf-8">
+            <title>N.B.K.R INSTITUTE OF SCIENCE AND TECHNOLOGY</title>
+             
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+            <style type="text/css">
+                *{
+                    margin: 0px;
+                    padding: 0px;
+                    text-decoration: none;
+                    list-style: none;
+                   
+                  
+                }
+               .bgcolor{
+                 /*background:linear-gradient( to bottom, orange ,white,green);*/
+                   font-family: montserrat;
+                   /*background: #34495e;*/
+                   
+               }
+               .logo{
+                   margin-left : 200px;
+               }
+               .wrapper{
+                   display: inline-flex;
+
+               }
+               .wrapper .static-text{
+                font-size:30px;
+                color:wheat;
+                font-weight: 500;
+               }
+               .wrapper .dynamic-txts{
+                 margin-left: 15px;
+                 height: 90px;
+                 line-height: 90px;
+                overflow: hidden;
+               }
+               .dynamic-txts li{
+                color:#FC6060;
+                 list-style: none;
+                 font-size: 30px;
+                 font-weight: 400;
+                 position: relative;
+                 top: 0;
+                
+                 animation: slide 6s steps(4) infinite;
+               }
+               @keyframes slide{
+                   100%{
+                      top: -360px;
+
+                   }
+                }
+               .dynamic-txts li span{
+                   position: relative;
+
+               }
+               .dynamic-txts li span::after{
+                   content: "";
+                   position: absolute;
+                   left:0;
+                   height:100%;
+                   width: 100%;
+                   border-left: 2px solid #FC6060;
+                   animation: typing 1.5s steps(10) infinite;
+                   background: #34495e;
+
+               }
+               @keyframes typing{
+                   100%{
+                       left: 100%;
+                    margin: o -35px 0 35px;
+                   }
+               }
+
+            
+                .nav{
+                    height: 50px;
+                    width: 100%;
+                    background:#34495e;
+                    position: sticky;
+                    top: 0px;
+                    
+                   
+                }
+                .menu-Bar{
+                   
+                   position: relative;
+                    margin: 0px;
+                    padding: 0 ;
+                    line-height: 60px;
+                    box-sizing: border-box;
+                    font-family: 'poppins',sans-serif;
+                   justify-content: content;
+                   align-items: center;
+                   min-width: 100vh;
+                   overflow: visible;
+          
+
+
+                   
+                }
+                .nav ul{
+                    float: left;
+                    left: 300px;
+                    overflow: visible;
+                    
+
+                }
+                .nav li{
+                    display: inline-block;
+                    margin: 0 5px;
+                    line-height: 60px;
+                    
+                }
+                .nav a {
+                    color:white;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    border: 1px solid transparent;
+                    padding: 5px 7px;
+                    border-radius: 3px;
+                }
+                 .active,a:hover{
+                   border: 1px solid white;
+                   transition: .5s;
+                   color: red;
+                }
+
+                .menu .menu1 ul li{
+                    display: none;
+
+                }
+                .menu .menu1:hover ul li{
+                    display: block;
+                    background: #34495e;
+                    overflow: visible;
+                }
+                .menu .menu2 ul li{
+                    display: none;
+                }
+                .menu .menu2:hover ul li{
+                    display: block;
+                    background: #34495e;
+                 
+                }
+                .menu .menu3 ul li{
+                    display: none;
+                }
+                .menu .menu3:hover ul li{
+                    display: block;
+                    background: #34495e;
+               
+                }
+
+                .menu .menu4 ul li{
+                    display: none;
+                }
+                .menu .menu4:hover ul li{
+                    display: block;
+                    background: #34495e;
+                  
+                }
+
+                .Section_top{
+                    width: 100%;
+                    height: 70%;
+        
+                    background-image: url("cseblock.jpg");
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    animation: change 10s infinite ease-in-out;
+
+                    
+                }
+                @keyframes change{
+                  0%{
+                      background-image: url("7.jpg");
+                  }
+                  40%{
+                      background-image: url("2.jpg");
+                  }
+                 80%{
+                      background-image: url("6.jpg");
+                  }
+                 120%{
+                      background-image: url("7.jpg");
+                  }
+                 160%{
+                      background-image: url("8.jpg");
+                  }
+                  200%{
+                      background-image: url("Screenshot (4).png");
+                  }
+                }  
+    .menu-Bar .search-container {
+  float: right;
+  color: #34495e;
+
+} 
+
+.menu-Bar input[type=text] {
+  padding: 30px;
+  margin-right: 8px;
+  font-size: 17px;
+  border: none;
+
+}
+
+.menu-Bar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-right: 8px;
+  margin-right: 16px;
+  background: #34495e;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-Bar .search-container button:hover {
+  background: #34495e;
+}
+
+  .menu-Bar a, .menu-Bar input[type=text], .menu-Bar .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .menu-Bar input[type=text] {
+    border: 1px solid #34495e;  
+  }
+  .mbc{
+                    background:linear-gradient( to bottom right, orange, white,white, green);
+                    box-shadow: 3px 3px 20px blueviolet;
+        }
+        .brightness{
+            filter:brightness(100%);
+            filter:contrast(200%);
+            filter:drop-shadow(8px 8px 10px none)
+        }
+    .heading{
+        text-align: center;
+        position: relative;
+        font-size: 3em;
+        color: #0e3742;
+        text-transform: uppercase;
+        -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+        line-height: 0.90em;
+        outline: none;
+        animation: animate 5s linear infinite;
+        overflow: hidden;
+     
+        
+    }
+    @keyframes animate {
+        18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+        {
+            color:#0e3742;
+            box-shadow: none;
+        }
+        18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+       {
+            color:#fff;
+            text-shadow: 0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 160px #03bcf4;
+        }
+    }
+
+
+    .nbkr{
+        background: #07252d;
+        overflow: hidden;
+    }
+
+    .box_Effects{
+        font-family: 'poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+       
+    }
+    .content{
+        width: 80vw;
+        min-height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        z-index: 2;
+        box-sizing: border-box;
+    }
+    .content .box{
+        position: relative;
+        width: 25vw;
+        height: 60vh;
+        min-width: 320px;
+        background: #e2a9e5;
+        overflow: hidden;
+        transition: all 0.5s ease-i29
+        z-index: 2;
+        box-sizing: border-box;
+        padding: 30px;
+        box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    }
+    .content .box::before{
+        content: '\201C';
+        position: absolute;
+        top: -20px;
+        left: 5px;
+        width: 100%;
+        height: 100%;
+        font-size: 120px;
+        opacity: 0.2;
+        background: transparent;
+        pointer-events: none;
+
+    }
+    .content .box::after{
+        content: '\201D';
+        position: absolute;
+        bottom: -10px;
+        right: 5%;
+        font-size: 120px;
+        opacity: 0.2;
+        background: transparent;
+        filter: invert(1);
+        pointer-events: none;
+    }
+    .content .box p{
+        margin: 0;
+        padding: 0px;
+        font-size: 1.1rem;
+    }
+    .content .box h6{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        bottom: 10%;
+        right: 10%;
+        font-size: 0.5rem;
+
+  }
+  .content .box h3{
+      text-decoration: underline;
+      text-transform: uppercase;
+    
+  }
+
+  .content .box:hover{
+      color: #07252d;
+      box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+  }
+  /*.content .bg{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      opacity: 0;
+      transition: all 0.5s ease-in;
+      width: 100%;
+      height: 100vh;
+      overflow: visible;
+  }*/
+  .content .box.box1:hover,
+  .content .box.box1:hover~.bg{
+      opacity: 1;
+      background: #e2a9e5;
+      background: -moz-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
+      background: -webkit-linear-gradient(-45deg,#e2a9e5 15%,#2b94e5 100%);
+      background: linear-gradient(135deg,#e2a9e5 15%,#2b94e5 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1);
+  }
+
+  .content .box.box2:hover,
+  .content .box.box2:hover~.bg{
+      opacity: 1;
+      background: #632c65;
+      background: -moz-linear-gradient(-45deg,#632c65 15%,#56a5e2 100%);
+      background: -webkit-linear-gradient(-45deg,#632c65 15%,#56a5e2 100%);
+      background: linear-gradient(135deg,#632c65 15%,#56a5e2 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65',endColorstr='#56a5e2',GradientType=1 );
+  }
+
+  .content .box.box3:hover,
+  .content .box.box3:hover~.bg{
+      opacity: 1;
+      background: #e2a9e5;
+      background: -moz-linear-gradient(-45deg,#4b384c 15%,#da5de2 100%);
+      background: -webkit-linear-gradient(-45deg,#4b384c 15%,#da5de2 100%);
+      background: linear-gradient(135deg,#4b384c 15%,#da5de2 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c',endColorstr='#da5de2',GradientType=1);
+  }
+
+  .footer{
+      background: #0e3742;
+      margin: 40px;
+      width:100%;
+      height: 30px;
+      color:#632c65;
+
+      position: relative;
+      
+    }
+    .footer1{
+        margin-left: 200px;
+    }
+
+  
+  </style>
+
+
+ <script type="text/javascript">
+                setInterval(changeColor,500);
+              function changeColor(){
+                  var x=document.getElementById("name");
+                    if(x.style.color=="black")
+                          x.style.clor="orange";
+                        else if(x.style.color=="blue")
+                            x.style.color="green";
+                     else if(x.style.color=="green")
+                            x.style.color="red";
+                        else x.style.color="blue";
+                }
+                
+                </script>
+
+
+        </head>
+
+        <body class="bgcolor"  background="cseblock.jp">
+            <div class="mbc">
+            <nav class="logo"><img style="float:left " src="download-removebg-preview (1).png" width="135px" height="145Spx" class="brightness"/></nav>
+                &nbsp;&nbsp;&nbsp;
+                <h2 id="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="6">N  .  B  .  K  .  R</font><br>&nbsp;&nbsp;&nbsp;&nbsp;I N S T I T U T E &nbsp;  O F &nbsp;   S C I E N C E &nbsp;  A N D &nbsp;   T E C H N O L O G Y<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( A U T O N O M O U S )<br>&nbsp;&nbsp;&nbsp;&nbsp;A F F I L I T T E D &nbsp;  T O &nbsp;  J N T U A  ,&nbsp;  A N A N T H A P U R A M U</h2>
+            </div>
+            <h4 class="mcolors" text="red" align="center"><marquee><font color="blue"> IV B.Tech II SEM End Examinations Timetable-June-2022       II,III & IV B.Tech I SEM Supple(R-13)Exam Fee Notification-June-2022       IV B.Tech II SEM II MID Examinations Timetable-June-2022       III B.Tech II SEM I MID Examinations Timetable-June-2022       IV B.Tech II SEM Regular & Supple Exam Fee Notification-June-2022       I & II B.Tech II SEM Supple(R-20) & (R-19)Examination Timetable-May-2022 </marquee></h1>
+
+             <nav class="nav">
+               <body class="menu-Bar"><!--<i class="fa fa-child" style="font-size:48px;color:white"></i>-->
+                
+                 <ul class="menu">
+                <li><a class="active" href="project.html">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li class="menu1"><a href="#">Academics</a>
+                    <ul>
+                       <li><a href="#">CSE,IT AND AI&DS</a></li>
+                        <li><a href="#">ECE</a></li>
+                        <li><a href="#">EEE</a></li>
+                        <li><a href="#">Mechanical</a></li>
+                        <li><a href="#">Civil</a></li>
+                    </ul>
+                </li>
+                <li class="menu2"><a href="#">Previous Quetions Papers</a>
+                    <ul>
+                        <li><a href="#">1st year</a></li>
+                        <li><a href="#">2nd year</a></li>
+                        <li><a href="#">3rd year</a></li>
+                        <li><a href="#">Final year</a></li>
+                    </ul>
+                </li>
+                <li class="menu3"><a href="#">Contact Us</a>
+                 <ul>
+                     <li><a href="#">phone number</a></li>
+                     <li><a href="#">college mail</a></li>
+
+
+                 </ul>
+                </li>
+                <li class="menu4"><a href="#">campus 360°</a>
+                 <ul>
+                     <li><a href="#">360° Gallery</a></li>
+                     <li><a href="#">Brief Intro</a></li>
+                     <li><a href="#">Aerial view</a></li>
+                 </ul>
+                
+                </li>
+               </ul>
+              
+               
+               <div class="search-container">
+                    <form action="welcome.html">
+                      <input type="search" placeholder="Search.." name="search"/>
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+        
+              </body>
+            </nav> 
+            
+            <div class="Section_top">
+            
+            </div>
+           <!--<div class="wrapper">
+                <div class="static-text">we're</div>
+                <ul class="dynamic-txts">
+                    <li><span>innovators</span></li>
+                    <li><span>creators</span></li>
+                    <li><span>devolopers</span></li>
+                    <li><span>disigners</span></li>
+                </ul>
+            </div>-->
+        <div class="nbkr">
+          <h1 class="heading"><font face="serif">N&nbsp;&nbsp;B&nbsp;&nbsp;K&nbsp;&nbsp;R&nbsp;&nbsp;I&nbsp;&nbsp;S&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;L &nbsp;I &nbsp;B &nbsp;R &nbsp;A &nbsp;R&nbsp;Y</font>&nbsp;<img src="library-removebg-preview.png " width="80px" height="45px"/></h1>
+        </div><br/>
+        <pre>
+              <font face="serif"><font size="5" > A library is a collection of materials, books or media that are easily accessible for use and not just for display purposes.<br/>             It is responsible for housing updated information in order to meet the user's needs on a daily basis. Students should possess <br/>            at least one text book for each subject of their study. It may be noted that library is not <br/>            a provider of text books to students for their routine studies. Library is a reservoir of various sources of information<br/>            and knowledge and students should utilize library as a source of additional information. They should cultivate the habit <br/>            of studying in the library during library hours instead of leaving the college soon after the class work is over. </font></font>
+        </pre>
+       
+      <div class="box_Effects">
+        <div class="content">
+            <div class="card">
+                <div class=" box box1">
+                    <h3><font face="serif"><font color="aqua">Library Working Hours</font></font></h3>
+                   <p><font size="3">•Monday – Saturday (Timings)
+                    <font size="3">8.30AM to 7.30PM(all working days)</font><br/><br/>
+                    •Seating Capacity: 500<br/><br/>
+                    •Located in <br/>1348.43 Sq meters.Area</font></p>
+                    <h6>NBKRIST</h6>
+                </div>
+                <div class="bg"></div>
+            </div>
+            <div class="card">
+                <div class=" box box2">
+                    <h3><font face="serif"><font color="aqua">VISION</font></font></h3>
+                <p>•To Provide Valuable Resources for Industry and Society through Excellence in Technical Education and Research</p>
+                <h6>NBKRIST</h6>
+            </div>
+            <div class="bg"></div>
+        </div>
+        <div class="card">
+            <div class="box box3">
+            <h3><font face="serif"><font color="aqua">MISSION</font></font></h3>
+            <p><font size="4">• To provide quality service to the users.<br/>
+                • To disseminate technical knowledge.<br/>
+                • To offer modern tools for accessing information.<br/>
+                • To network with leading libraries</font></p>
+            <h6>NBKRIST</h6>
+        </div>
+        <div class="bg"></div>
+    </div>
+</div>
+</div>
+
+</body>
+<section class="footer">
+    <footer class="footer1">Devoloped by pramodh</footer>
+</section>
+</html>
+
+
+     
